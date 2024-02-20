@@ -9,7 +9,7 @@ const JobSchema = new mongoose.Schema({
         enum: Object.values(JOB_STATUS),
         default: JOB_STATUS.PENDING,
     },
-    jobTType:{
+    jobType:{
         type:String,
         enum:Object.values(JOB_TYPE),
         default: JOB_TYPE.FULL_TIME,
@@ -19,7 +19,7 @@ const JobSchema = new mongoose.Schema({
         default: 'my city',
 
     },
-    createdBy: {
+    createdBy:{
         type:mongoose.Types.ObjectId,
         ref: 'User',
     },
