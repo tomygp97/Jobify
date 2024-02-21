@@ -13,7 +13,7 @@ module.exports = {
   plugins: ['react-refresh'],
   rules: {
     // Desactivar la verificación de tipos de propiedades de React
-    // 'react/prop-types': 'off',
+    'react/prop-types': 'off',
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },
